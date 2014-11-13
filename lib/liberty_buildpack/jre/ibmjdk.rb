@@ -145,8 +145,6 @@ module LibertyBuildpack::Jre
           File.chmod(0755, copy)
           system "#{copy} -i silent -f #{response_file.path} 2>&1"
 
-          ## Move expanded JRE to JAVA_HOME as JRE installer ignoring USER_INSTALL_DIR
-          Pathname.new(temp).children.select { |child| child.directory? }.map { |path| system "mv #{path.to_s}/* #{java_home}" }
         end
       else
         system "tar xzf #{file.path} -C #{java_home} --strip 1 2>&1"
