@@ -15,5 +15,5 @@
 
 # Configuration for JRE repository
 ---
-repository_root: "https://github.com/MaxRycroft/ibm-websphere-liberty-buildpack/tree/master/config/maxsRepo"
+repository_root: "https://raw.githubusercontent.com/MaxRycroft/ibm-websphere-liberty-buildpack/master/config/maxsRepo/"
 version: 1.7.+
